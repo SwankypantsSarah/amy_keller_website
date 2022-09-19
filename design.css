@@ -118,3 +118,7 @@ p {
   height: 150px;
   width: 150px;
 }
+
+.section-padding {
+  padding-inline: 4rem;
+}
