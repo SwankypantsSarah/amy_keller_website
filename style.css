@@ -39,6 +39,7 @@ nav {
 
 .hero {
   background-image: url(img/colorful_bg_dc.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: none;
   position: relative;
