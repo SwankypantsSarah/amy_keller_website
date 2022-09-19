@@ -166,3 +166,50 @@ nav {
 }
 
 /* About Amy */
+
+.about-wrapper {
+  position: relative;
+  display: flex;
+  gap: 5rem;
+}
+
+.about-deco {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: -65px;
+  top: -65px;
+  opacity: 0.46;
+}
+
+.about-subheading {
+  color: var(--clr-accent-pink);
+  font-weight: var(--fw-bold);
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.about-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.about-para-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* CTA Mid */
+
+.cta-img {
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  height: 450px;
+}

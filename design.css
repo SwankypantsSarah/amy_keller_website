@@ -120,5 +120,9 @@ p {
 }
 
 .section-padding {
-  padding-inline: 4rem;
+  padding-inline: 3rem;
+}
+
+.block-padding {
+  padding-block: 5rem;
 }
