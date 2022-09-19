@@ -1,4 +1,8 @@
 /* Navigation */
+nav {
+  background-color: var(--clr-accent-purple);
+}
+
 .nav-wrapper {
   font-family: "parisine-std";
   font-size: var(--fs-body);
@@ -39,15 +43,17 @@
   background-repeat: none;
   position: relative;
   max-width: 100%;
-  height: 100vh;
+  /* height: 110vh; */
+  height: 1200px;
 }
 
 .hero::before {
   content: "";
   display: inline-block;
   position: absolute;
-  width: 80vw;
-  height: 60vh;
+
+  width: 55vmax;
+  height: 80vmin;
   background-color: var(--clr-bg-accent-yellow);
   opacity: 0.6;
   box-shadow: 0px 0px 8px 5px var(--clr-box-shadow-grey);
@@ -61,16 +67,11 @@
 }
 
 .hero-img {
-  height: 25rem;
-  max-width: 25rem;
+  height: 20rem;
+  max-width: 20rem;
 }
 
 .hero-text-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-
   position: absolute;
   top: 25%;
   left: 50%;
@@ -79,10 +80,22 @@
   z-index: 1;
 }
 
+.hero-text-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-header {
+  font-size: var(--fs-logo);
+  /* font-size: clamp(var(--fs-heading) 2vw var(--fs-logo); */
+}
+
 .hero-desc-text {
-  color: var(--clr-light-purple);
-  /* font-size: 1.7vw; */
-  padding-inline: 1.75rem;
+  color: var(--clr-dark-grey);
+  font-size: clamp(var(--fs-body) 1.5vw var(--fs-accent));
+  padding-inline: 5vmax;
 }
 
 .hero-buttons-wrapper {
@@ -97,6 +110,56 @@
   color: var(--clr-white);
 }
 .hero-btn-right {
-  background-color: var(--clr-btn-purple);
+  background-color: var(--clr-accent-purple);
   color: var(--clr-light-purple);
+}
+
+/* information section */
+
+.information {
+  position: relative;
+  max-width: 100%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.info-decor-top {
+  position: absolute;
+  transform: rotate(-35deg);
+  left: -3rem;
+}
+
+.info-decor-bottom {
+  position: absolute;
+  transform: rotate(25deg);
+  right: 0rem;
+  bottom: 10rem;
+}
+
+.deco-img-bg {
+  object-fit: cover;
+  position: absolute;
+  transform: rotate(180deg);
+  opacity: 0.3;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+.information-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  text-align: center;
+  z-index: 1;
+}
+
+.information-subheading {
+  color: var(--clr-accent-pink);
 }
