@@ -1,0 +1,81 @@
+:root {
+  /* Colors */
+
+  --clr-light-purple: #9d98b8;
+  --clr-dark-purple: #481446;
+  --clr-accent-blue: #c0e1ee;
+  --clr-accent-pink: #f57ae7;
+  --clr-bg-accent-yellow: #fffce5;
+  --clr-white: #fff;
+  --clr-black: #000;
+  --clr-box-shadow-grey: rgba(119, 119, 119, 0.3);
+
+  /* typography */
+
+  --fs-accent: 1rem; /* 16px */
+  --fs-body: 1.333rem; /* 21.33px */
+  --fs-subheading: 1.777rem; /* 28.43px */
+  --fs-heading: 2.369rem; /* 37.9px */
+  --fs-logo: 3.157rem; /* 50.52px */
+
+  --fw-bold: 700;
+}
+
+@font-face {
+  font-family: "botanica", "helvetica";
+  src: url(/Fonts/botanica-webfont.woff);
+}
+
+@font-face {
+  font-family: "parisine-std";
+  src: url(/fonts/Parisine\ Plus\ Std\ Clair.otf);
+}
+
+@font-face {
+  font-family: "parisine-bold";
+  src: url(/Fonts/Parisine\ Plus\ Std\ Clair\ Bold.otf);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-family: "parisine-std";
+  font-size: var(--fs-body);
+}
+
+/* utility */
+
+.btn {
+  text-transform: uppercase;
+  font-family: "Parisine-std";
+  letter-spacing: 2.5px;
+}
+
+.logo-type {
+  text-transform: uppercase;
+  font-family: "botanica";
+  font-size: var(--fs-logo);
+}
+
+.subheading {
+  font-family: "botanica";
+  font-size: var(--fs-subheading);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "parisine-std";
+  font-weight: var(--fw-bold);
+}
