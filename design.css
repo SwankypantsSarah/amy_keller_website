@@ -2,12 +2,14 @@
   /* Colors */
 
   --clr-light-purple: #9d98b8;
+  --clr-btn-purple: #e9f0ff;
   --clr-dark-purple: #481446;
   --clr-accent-blue: #c0e1ee;
   --clr-accent-pink: #f57ae7;
   --clr-bg-accent-yellow: #fffce5;
   --clr-white: #fff;
   --clr-black: #000;
+  --clr-light-grey: #bbb;
   --clr-box-shadow-grey: rgba(119, 119, 119, 0.3);
 
   /* typography */
@@ -16,7 +18,7 @@
   --fs-body: 1.333rem; /* 21.33px */
   --fs-subheading: 1.777rem; /* 28.43px */
   --fs-heading: 2.369rem; /* 37.9px */
-  --fs-logo: 3.157rem; /* 50.52px */
+  --fs-logo: 4vw; /* 50.52px */
 
   --fw-bold: 700;
 }
@@ -36,7 +38,9 @@
   src: url(/Fonts/Parisine\ Plus\ Std\ Clair\ Bold.otf);
 }
 
-html {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -58,15 +62,20 @@ p {
 /* utility */
 
 .btn {
+  display: block;
   text-transform: uppercase;
   font-family: "Parisine-std";
   letter-spacing: 2.5px;
+  font-size: var(--fs-body);
+  padding: 1rem 2rem;
+  box-shadow: 1px 1px 3px 1px var(--clr-box-shadow-grey);
 }
 
 .logo-type {
   text-transform: uppercase;
   font-family: "botanica";
   font-size: var(--fs-logo);
+  color: var(--clr-dark-purple);
 }
 
 .subheading {
