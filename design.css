@@ -15,12 +15,12 @@
 
   /* typography */
 
-  --fs-accent: 1em; /* 21px */
-  --fs-body: 1em; /* 27.00px */
-  --fs-subheading: 1.333em; /* 37.31px */
-  --fs-heading: 1.777em; /* 49.74px */
+  --fs-accent: 1rem; /* 21px */
+  --fs-body: 1rem; /* 27.00px */
+  --fs-subheading: 1.333rem; /* 37.31px */
+  --fs-heading: 1.777rem; /* 49.74px */
   /* --fs-logo: 3.157em;  66.30px */
-  --fs-logo: clamp(1.777em, 2.5vw, 3.157em);
+  --fs-logo: clamp(1.5rem, 2.5vw, 3.157em);
 
   --fw-bold: 700;
 }
