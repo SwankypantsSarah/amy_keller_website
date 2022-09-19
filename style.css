@@ -19,6 +19,10 @@
   align-items: center;
   gap: 2rem;
 }
+.nav-link {
+  font-family: "Parisine-std";
+  color: var(--clr-dark-purple);
+}
 
 .nav-btn {
   display: inline-block;
