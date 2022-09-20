@@ -16,11 +16,11 @@
   /* typography */
 
   --fs-accent: 1rem; /* 21px */
-  --fs-body: 1rem; /* 27.00px */
-  --fs-subheading: 1.333rem; /* 37.31px */
-  --fs-heading: 1.777rem; /* 49.74px */
-  /* --fs-logo: 3.157em;  66.30px */
-  --fs-logo: clamp(1.5rem, 2.5vw, 3.157em);
+  --fs-body: 1.25rem; /* 27.00px */
+  --fs-subheading: 1.563rem; /* 37.31px */
+  --fs-heading: 1.953rem; /* 49.74px */
+  --fs-logo-base: 2.441rem; /* 66.30px */
+  --fs-logo: clamp(var(--fs-subheading), 2.5vw, var(--fs-logo-base));
 
   --fw-bold: 700;
 }
@@ -120,9 +120,10 @@ p {
 }
 
 .section-padding {
-  padding-inline: 3rem;
+  padding-inline: 8rem;
 }
 
 .block-padding {
-  padding-block: 5rem;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
 }
