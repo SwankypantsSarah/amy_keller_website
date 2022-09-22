@@ -11,7 +11,7 @@
   --clr-black: #000;
   --clr-light-grey: #bbb;
   --clr-dark-grey: #444;
-  --clr-box-shadow-grey: rgba(119, 119, 119, 0.3);
+  --clr-box-shadow-grey: rgba(119, 117, 117, 0.212);
 
   /* typography */
 
@@ -52,11 +52,6 @@ html {
   font-size: 131.3%;
 }
 
-/* @media (max-width: 68.57rem) and (min-width: 17.5rem) {
-  html {
-    font-size: 3.2vw;
-  } */
-
 h1 {
   font-family: "botanica";
   text-transform: uppercase;
@@ -93,7 +88,8 @@ p {
   letter-spacing: 2.5px;
   font-size: var(--fs-body);
   padding: 0.5rem 1rem;
-  box-shadow: 1px 1px 3px 1px var(--clr-box-shadow-grey);
+  /* box-shadow: 1px 1px 3px 1px var(--clr-box-shadow-grey); */
+  box-shadow: 6px 5px 5px var(--clr-box-shadow-grey);
 }
 
 .logo-type {
@@ -101,12 +97,14 @@ p {
   font-family: "botanica";
   font-size: var(--fs-logo);
   color: var(--clr-dark-purple);
+  line-height: 1.6rem;
 }
 
 .subheading {
   font-family: "botanica";
   font-size: var(--fs-subheading);
   text-transform: uppercase;
+  line-height: 1rem;
 }
 
 .heading-two {
@@ -120,7 +118,8 @@ p {
 }
 
 .section-padding {
-  padding-inline: 8rem;
+  /* padding-inline: 8rem; */
+  padding-inline: min(5rem, 7rem);
 }
 
 .block-padding {
