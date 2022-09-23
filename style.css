@@ -75,8 +75,8 @@ nav {
 }
 
 .hero-img {
-  height: 20rem;
-  max-width: 20rem;
+  height: 18rem;
+  max-width: 18rem;
 }
 
 .hero-text-container {
@@ -92,18 +92,57 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .hero-header {
+  font-size: var(--fs-accent);
+}
+
+.words {
+  font-family: "parisine-std";
   font-size: var(--fs-logo);
+  color: var(--clr-accent-pink);
+  text-transform: uppercase;
+}
+
+.words::before {
+  content: "";
+  animation: topToBottom 6s infinite 0s;
+}
+/* animation to change words */
+@keyframes topToBottom {
+  0% {
+    content: "Transmitter";
+  }
+
+  40% {
+    content: "Brand Builder";
+  }
+
+  60% {
+    content: "Creative";
+  }
+
+  80% {
+    content: "Storyteller";
+  }
+
+  100% {
+    content: "Dreamer";
+  }
+}
+
+.hero-subhead {
+  font-size: var(--fs-body);
+  text-transform: capitalize;
 }
 
 .hero-desc-text {
   color: var(--clr-dark-grey);
   font-size: clamp(var(--fs-body) 1.5vw var(--fs-accent));
   width: min(600px, calc(50% + 100px));
-  max-width: 75ch;
+  /* max-width: 75ch; */
 }
 
 .hero-buttons-wrapper {
@@ -113,12 +152,31 @@ nav {
   gap: 1rem;
 }
 
+@keyframes change-text {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  85% {
+    opacity: 1;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
 .hero-btn-left {
-  background-color: var(--clr-dark-purple);
+  background: var(--clr-dark-purple);
   color: var(--clr-white);
 }
 .hero-btn-right {
-  background-color: var(--clr-accent-purple);
+  background: var(--clr-accent-purple);
   color: var(--clr-light-purple);
 }
 
@@ -128,7 +186,7 @@ nav {
   position: relative;
   align-self: center;
   max-width: 100%;
-  height: 1000px;
+  height: 880px;
   overflow: hidden;
 }
 
@@ -142,7 +200,7 @@ nav {
   position: absolute;
   transform: rotate(25deg);
   right: 0rem;
-  bottom: 10rem;
+  bottom: 5rem;
 }
 
 .deco-img-bg {
@@ -221,6 +279,7 @@ nav {
 .about-para-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -229,7 +288,11 @@ nav {
 }
 
 .about-right {
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .about-img {
@@ -357,13 +420,29 @@ nav {
 
 .desc-wrapper {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icon-img {
+  height: 120px;
+  width: 120px;
 }
 
 .object-subheading {
+  width: 100%;
   background-color: var(--clr-bg-accent-yellow);
   text-transform: uppercase;
+  text-align: center;
   color: var(--clr-accent-pink);
   font-family: "botanica";
+}
+
+.cta-results-btn {
+  background-color: var(--clr-accent-pink);
+  color: white;
 }
 
 /* Testimonial Carousel */

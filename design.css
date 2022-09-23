@@ -63,6 +63,7 @@ p,
 a,
 h2,
 h3,
+li,
 .btn {
   font-family: "Parisine-std";
 }
@@ -79,6 +80,9 @@ p {
   font-family: "parisine-std";
   font-size: var(--fs-body);
 }
+strong {
+  font-weight: var(--fw-bold);
+}
 
 /* utility */
 
@@ -86,7 +90,7 @@ p {
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  font-size: var(--fs-body);
+  font-size: var(--fs-accent);
   padding: 0.5rem 1rem;
   /* box-shadow: 1px 1px 3px 1px var(--clr-box-shadow-grey); */
   box-shadow: 6px 5px 5px var(--clr-box-shadow-grey);
