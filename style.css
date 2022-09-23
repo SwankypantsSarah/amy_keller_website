@@ -190,15 +190,8 @@ nav {
 .about-wrapper {
   display: flex;
   gap: 2rem;
-}
-
-.about-deco {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  left: -90px;
-  top: -45px;
-  opacity: 0.46;
+  position: relative;
+  padding: 2rem 0;
 }
 
 .about-subheading {
@@ -207,10 +200,6 @@ nav {
 }
 
 .about-left {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   gap: 2rem;
 }
 
@@ -218,6 +207,15 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+
+.about-deco {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: -90px;
+  top: calc(-94px + 2rem);
+  opacity: 0.26;
 }
 
 .about-para-wrapper {
@@ -236,7 +234,9 @@ nav {
 
 .about-img {
   display: block;
-  object-fit: cover;
+  object-fit: fill;
+  max-width: 100%;
+  height: auto;
 }
 
 /* CTA Mid */
@@ -332,7 +332,6 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 6rem;
-  /* padding: 4rem 2rem; */
   padding-inline: clamp(2rem, 0.667rem + 2.96vw, 4rem);
 }
 
