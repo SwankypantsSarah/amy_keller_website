@@ -120,3 +120,71 @@ The more you attempt, learn, and improve at things, the more confidence you gain
             <li>+ Positive Psychology </li>
             <li>+ Holistic Healing Modalities</li>
           </ul>
+
+# HTML - Information Section Removed
+
+ <section class="results block-padding">
+      <div class="results-wrapper">
+        <div class="results-top-img-wrapper">
+          <img
+            src="/img/decor-compressed/man-on-ocean.jpg"
+            alt=""
+            class="results-img long"
+          />
+          <img
+            src="/img/decor-compressed/ocean-sun.jpg"
+            alt=""
+            class="results-img short"
+          />
+        </div>
+        <div class="results-mid-wrapper">
+          <div class="results-header-wrapper">
+          <h3 class="results-subheader subheading">
+            how it works
+          </h3>
+          <h2 class="results-header heading-two">
+            Let's Build Your Narrative Together!
+          </h2>
+        </div>
+          <div class="results-sub-wrapper">
+            <div class="desc-wrapper">
+              <img src="img/MMS - Archery Icon 1.png" alt="graphic of arrows set in pink" class="icon-img">
+                <h2 class="object-subheading">voice</h2>
+                <p class="object-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis aliquam tenetur doloremque accusamus aspernatur.</p>
+              </div>
+            <div class="desc-wrapper">
+
+              <img src="img/MMS - Archery Icon 2.png" alt="graphic of arrows set in pink" class="icon-img">
+
+                <h2 class="object-subheading">vision</h2>
+                <p class="object-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis aliquam tenetur doloremque accusamus aspernatur.</p>
+              </div>
+            <div class="desc-wrapper">
+              <img src="img/MMS - Archery Icon 3.png" alt="graphic of arrows set in pink" class="icon-img">
+                <h2 class="object-subheading">execution</h2>
+                <p class="object-para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis aliquam tenetur doloremque accusamus aspernatur.</p>
+              </div>
+            </div>
+            <a href="#" class="cta-results-btn btn">Let's do this!</a>
+          </div>
+          <div class="results-bottom-img-wrapper">
+            <img
+              src="/img/decor-compressed/sunset.jpg"
+              alt=""
+              class="results-img short"
+            />
+            <img
+              src="/img/decor-compressed/wish.jpg"
+              alt=""
+              class="results-img long"
+            />
+          </div>
+        </div>
+        <div class="results-bottom-img-wrapper"></div>
+      </div>
+      <!-- <img
+        src="img/decor-compressed/mms-notebook-sm.png"
+        alt="graphic of a notebook in pastel colors"
+        class="decor-img results-img-top"
+      /> -->
+    </section>

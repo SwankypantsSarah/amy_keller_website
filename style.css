@@ -40,15 +40,9 @@ nav {
 
 .hero {
   background-image: url(img/colorful_bg_dc.jpg);
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  max-width: 100%;
-
   /* min-height: 1200px; */
   min-height: clamp(950px, 50vmax, 1200px);
+  margin-bottom: 2rem;
 }
 
 .hero-shape {
@@ -152,25 +146,6 @@ nav {
   gap: 1rem;
 }
 
-@keyframes change-text {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  20% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  85% {
-    opacity: 1;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-}
-
 .hero-btn-left {
   background: var(--clr-dark-purple);
   color: var(--clr-white);
@@ -207,7 +182,7 @@ nav {
   object-fit: cover;
   position: absolute;
   transform: rotate(180deg);
-  opacity: 0.3;
+  opacity: 0.2;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -25%);
@@ -239,6 +214,14 @@ nav {
   background-color: var(--clr-accent-pink);
 }
 
+/* BG Amy Pic */
+
+.amy-pic-wrap {
+  background-image: url(/img/AmyKeller112_lrg.jpg);
+  min-height: 1000px;
+  display: block;
+}
+
 /* About Amy */
 
 .about {
@@ -246,6 +229,7 @@ nav {
 }
 
 .about-wrapper {
+  /* background-color: var(--clr-accent-blue); */
   display: flex;
   gap: 2rem;
   position: relative;
@@ -257,22 +241,12 @@ nav {
   font-weight: var(--fw-bold);
 }
 
-.about-left {
-  gap: 2rem;
-}
-
-.about-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-
 .about-deco {
   position: absolute;
   width: 200px;
   height: 200px;
   left: -90px;
-  top: calc(-94px + 2rem);
+  top: calc(-94px + 3rem);
   opacity: 0.26;
 }
 
@@ -285,6 +259,12 @@ nav {
 
 .about-para {
   max-width: 75ch;
+}
+
+.about-btn,
+.about-subheading,
+.about-para-wrapper {
+  margin-block: 1rem;
 }
 
 .about-right {
@@ -300,6 +280,10 @@ nav {
   object-fit: fill;
   max-width: 100%;
   height: auto;
+}
+
+.about-btn {
+  background-color: var(--clr-accent-blue);
 }
 
 /* CTA Mid */
@@ -333,11 +317,11 @@ nav {
 }
 
 .cta-header {
-  color: var(--clr-accent-pink);
+  color: var(--clr-dark-purple);
 }
 
 .cta-para {
-  max-width: 70ch;
+  max-width: 65ch;
   color: var(--clr-dark-purple);
 }
 
