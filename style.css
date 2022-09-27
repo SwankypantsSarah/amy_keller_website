@@ -217,7 +217,7 @@ nav {
 /* BG Amy Pic */
 
 .amy-pic-wrap {
-  background-image: url(/img/AmyKeller112_lrg.jpg);
+  background-image: url(./img/AmyKeller112_lrg.jpg);
   min-height: 1000px;
   display: block;
 }

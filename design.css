@@ -27,17 +27,17 @@
 
 @font-face {
   font-family: "botanica", "helvetica";
-  src: url(/Fonts/botanica-webfont.woff);
+  src: url(./Fonts/botanica-webfont.woff);
 }
 
 @font-face {
   font-family: "parisine-std";
-  src: url(/fonts/Parisine\ Plus\ Std\ Clair.otf);
+  src: url(./Fonts/Parisine\ Plus\ Std\ Clair.otf);
 }
 
 @font-face {
   font-family: "parisine-bold";
-  src: url(/Fonts/Parisine\ Plus\ Std\ Clair\ Bold.otf);
+  src: url(./Fonts/Parisine\ Plus\ Std\ Clair\ Bold.otf);
 }
 
 *,
