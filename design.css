@@ -106,6 +106,18 @@ strong {
   box-shadow: 6px 5px 5px var(--clr-box-shadow-grey);
 }
 
+.btn:hover,
+.btn:focus {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: var(--fs-accent);
+  padding: 0.5rem 1rem;
+  /* box-shadow: 1px 1px 3px 1px var(--clr-box-shadow-grey); */
+  box-shadow: 6px 5px 5px var(--clr-box-shadow-grey);
+  background-color: var(--clr-bg-accent-yellow);
+}
+
 .logo-type {
   text-transform: uppercase;
   font-family: "botanica";
@@ -137,6 +149,6 @@ strong {
 }
 
 .block-padding {
-  padding-bottom: 5rem;
-  padding-top: 3rem;
+  padding-bottom: 8rem;
+  padding-top: 4rem;
 }

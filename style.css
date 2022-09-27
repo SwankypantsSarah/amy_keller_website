@@ -292,6 +292,7 @@ nav {
   gap: 0.8rem;
   align-items: center;
   background-color: var(--clr-accent-blue);
+  border-bottom: 1px solid var(--clr-light-grey);
   padding: 1rem 5rem;
 }
 
@@ -322,6 +323,7 @@ nav {
 }
 .about-wrapper li {
   font-size: var(--fs-body);
+  padding-bottom: 0.2rem;
 }
 .about-wrapper * {
   color: var(--clr-dark-purple);
@@ -332,15 +334,15 @@ nav {
   width: 6rem;
 }
 
-/* Process Subsection */
-
 /* CTA Mid */
 
 .cta-mid {
-  background-image: url(img/MMS\ -\ Gradient\ Strip.png);
+  /* background-image: url(img/MMS\ -\ Gradient\ Strip.png);
   background-position: left center;
-  background-size: cover;
-  height: 550px;
+  background-size: cover; */
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -392,84 +394,19 @@ nav {
   box-shadow: 0px, 0px, 5px, 10px, var(--clr-dark-purple);
 }
 
-/* results */
+/* CTA decor img */
 
-.results-wrapper {
-  display: grid;
-  grid-template-rows: 30% 40% 30%;
-}
-
-.results-img-bottom {
+.cta-img-bottom {
   position: absolute;
-  left: 5%;
+  right: 2%;
+  left: 2%;
   transform: rotate(25deg);
 }
-
-.results-top-img-wrapper {
-  display: grid;
-  grid-template-columns: 0.35fr 0.65fr;
-}
-
-.results-bottom-img-wrapper {
-  display: grid;
-  grid-template-columns: 0.65fr 0.35fr;
-}
-
-.results-img {
-  overflow: hidden;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.results-mid-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6rem;
-  padding-inline: clamp(2rem, 0.667rem + 2.96vw, 4rem);
-}
-
-.results-header-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.results-subheader {
-  color: var(--clr-accent-pink);
-}
-
-.results-sub-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  gap: 1.75rem;
-  overflow: hidden;
-}
-
-.desc-wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.icon-img {
-  height: 120px;
-  width: 120px;
-}
-
-.object-subheading {
-  width: 100%;
-  background-color: var(--clr-bg-accent-yellow);
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--clr-accent-pink);
-  font-family: "botanica";
+.cta-img-bottom-two {
+  position: absolute;
+  right: 12%;
+  top: 15%;
+  transform: rotate(-20deg);
 }
 
 .cta-results-btn {
@@ -540,4 +477,16 @@ nav {
 .testimonial-header {
   color: var(--clr-dark-purple);
   text-transform: uppercase;
+}
+
+/* decor img */
+
+.deco-img-wrapper {
+  position: relative;
+}
+.decor-img-mid {
+  position: absolute;
+  left: 111px;
+  bottom: -160px;
+  rotate: 15deg;
 }
