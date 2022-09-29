@@ -1,5 +1,6 @@
 /* Navigation */
-nav {
+nav,
+footer {
   background-color: var(--clr-accent-purple);
 }
 
@@ -272,11 +273,11 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 0.8rem;
 }
 
 .about-btn {
-  background-color: var(--clr-accent-blue);
+  background-color: var(--clr-accent-pink);
 }
 
 .about-subsection {
@@ -337,9 +338,9 @@ nav {
 /* CTA Mid */
 
 .cta-mid {
-  /* background-image: url(img/MMS\ -\ Gradient\ Strip.png);
-  background-position: left center;
-  background-size: cover; */
+  background-image: url(./img/decor-compressed/tuning_fork_sm.png);
+  background-position: center center;
+  background-repeat: no-repeat;
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
   min-height: 450px;
@@ -398,20 +399,117 @@ nav {
 
 .cta-img-bottom {
   position: absolute;
-  right: 2%;
+  top: 10%;
   left: 2%;
   transform: rotate(25deg);
 }
 .cta-img-bottom-two {
   position: absolute;
   right: 12%;
-  top: 15%;
+  bottom: 8%;
   transform: rotate(-20deg);
 }
 
 .cta-results-btn {
   background-color: var(--clr-accent-pink);
   color: white;
+}
+
+/* Services */
+.services {
+  gap: 5rem;
+  /* keeps them equal height */
+  align-items: stretch;
+}
+
+.service-info {
+  border: 2px solid var(--clr-accent-blue);
+  background-color: var(--clr-bg-yellow);
+  box-shadow: 0px 1.2rem 1.2rem var(--clr-light-grey);
+  padding: 3.2rem;
+  gap: 1.5rem;
+  flex: 1;
+  transition: all 0.5s;
+}
+
+.service-info:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0px 2.4rem 2.4rem var(--clr-accent-blue);
+}
+
+.service-img {
+  display: inline-block;
+  max-width: 25%;
+  object-fit: cover;
+  align-self: center;
+}
+
+.service-header {
+  text-align: center;
+  margin-bottom: 2.8rem;
+}
+.service-header span {
+  color: var(--clr-dark-grey);
+  font-weight: 800;
+}
+
+.service-heading {
+  font-family: "botanica";
+  font-size: var(--fs-subheading);
+  color: var(--clr-accent-pink);
+  letter-spacing: 3%;
+}
+
+.service-price {
+  font-size: var(--fs-accent-header);
+  color: var(--clr-dark-purple);
+}
+
+.service-subdesc {
+  font-size: var(--fs-subaccent);
+  color: var(--clr-dark-purple);
+}
+
+.service-desc {
+  font-size: var(--fs-body);
+  color: var(--clr-dark-purple);
+}
+
+.list {
+  color: var(--clr-dark-purple);
+  gap: 0.8rem;
+}
+
+.service-list {
+  font-size: var(--fs-accent);
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.service-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: var(--clr-accent-pink);
+}
+
+.service-button {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service-btn-lt {
+  background-color: var(--clr-accent-pink);
+}
+.service-btn-rt {
+  background-color: var(--clr-bg-accent-yellow);
+}
+
+.service-btn-rt:hover,
+.service-btn-rt:focus {
+  background-color: var(--clr-accent-blue);
+  color: var(--clr-dark-purple);
 }
 
 /* Testimonial Carousel */
@@ -490,3 +588,5 @@ nav {
   bottom: -160px;
   rotate: 15deg;
 }
+
+/* footer */
