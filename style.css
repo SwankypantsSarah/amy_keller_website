@@ -135,7 +135,7 @@ footer {
 
 .hero-desc-text {
   color: var(--clr-dark-grey);
-  font-size: clamp(var(--fs-body) 1.5vw var(--fs-accent));
+  font-size: clamp(var(--fs-heading) 1.5vw var(--fs-body));
   width: min(600px, calc(50% + 100px));
   /* max-width: 75ch; */
 }
@@ -321,13 +321,12 @@ footer {
 
 .about-span {
   font-size: var(--fs-heading);
-}
-.about-wrapper li {
-  font-size: var(--fs-body);
-  padding-bottom: 0.2rem;
-}
-.about-wrapper * {
   color: var(--clr-dark-purple);
+}
+.about-listed {
+  font-size: var(--fs-body);
+  color: var(--clr-accent-pink);
+  padding-bottom: 0.2rem;
 }
 
 .about-icon {
@@ -416,7 +415,16 @@ footer {
 }
 
 /* Services */
-.services {
+
+.services-header {
+  font-size: var(--fs-heading);
+  text-align: center;
+  padding-bottom: 2rem;
+  color: var(--clr-accent-pink);
+  font-family: "botanica", "helvetica";
+}
+
+.services-wrapper {
   gap: 5rem;
   /* keeps them equal height */
   align-items: stretch;
@@ -510,6 +518,13 @@ footer {
 .service-btn-rt:focus {
   background-color: var(--clr-accent-blue);
   color: var(--clr-dark-purple);
+}
+
+/* BG Pic */
+.amy-pic-wrap-btm {
+  background-image: url(./img/AmyKeller111.jpg);
+  min-height: 1000px;
+  display: block;
 }
 
 /* Testimonial Carousel */
