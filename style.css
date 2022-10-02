@@ -29,11 +29,21 @@ footer {
   color: var(--clr-dark-purple);
 }
 
-.nav-btn {
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
   display: inline-block;
   padding: 0.75rem 1rem;
   background-color: var(--clr-light-purple);
   box-shadow: 6px 5px 0px var(--clr-light-grey);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.nav-btn:hover,
+.nav-btn:active {
+  background-color: var(--clr-accent-blue);
+  box-shadow: 3px 2px 2px var(--clr-light-grey);
   color: var(--clr-white);
 }
 

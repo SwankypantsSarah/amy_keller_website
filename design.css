@@ -120,12 +120,13 @@ strong {
 }
 
 .btn:hover,
-.btn:focus {
+.btn:active {
   background-color: var(--clr-bg-accent-yellow);
+  color: var(--clr-accent-pink);
 }
 
 .alt-btn:hover,
-.alt-btn:focus {
+.alt-btn:active {
   background-color: var(--clr-accent-blue);
   color: var(--clr-dark-purple);
   transform: translateY(-0.2rem);
