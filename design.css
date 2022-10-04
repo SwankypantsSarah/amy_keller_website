@@ -123,6 +123,8 @@ strong {
   font-size: var(--fs-accent);
   padding: 0.5rem 1rem;
   box-shadow: 0px 1.2rem 1.2rem var(--clr-box-shadow-grey);
+  font-family: inherit;
+  border: none;
   cursor: pointer;
   transition: all 0.8s;
 }
@@ -185,7 +187,6 @@ strong {
 }
 
 .section-padding {
-  /* padding-inline: 8rem; */
   padding-inline: min(5rem, 7rem);
 }
 

@@ -669,21 +669,21 @@ footer {
 
 .mms-hero {
   height: calc(100vh + 2rem);
-  margin-bottom: 6rem;
+  margin-bottom: 3.3rem;
   position: relative;
 }
 
 .mms-hero::before {
   content: "";
   background-image: linear-gradient(
-      0deg,
+      90deg,
       var(--clr-bg-accent-yellow) 22%,
       var(--clr-box-shadow-grey)
     ),
     url("img/AmyKeller112_lrg.jpg");
   background-repeat: no-repeat;
   box-sizing: cover;
-  background-position: center center;
+  background-position: left center;
   z-index: -1;
   height: 100%;
   width: 100%;
@@ -691,16 +691,25 @@ footer {
 }
 
 .mms-hero__wrapper {
-  padding-bottom: 3rem;
-  justify-content: end;
-  align-items: center;
-  gap: 2.2rem;
+  justify-content: center;
+  padding-inline: 3rem 55rem;
   height: 100%;
 }
 
+.mms-hero__header {
+  padding-bottom: 2rem;
+  line-height: 3rem;
+}
+
+.mms-hero__para-wrapper {
+  gap: 2rem;
+  color: var(--clr-dark-purple);
+}
+
 .mms-hero__para {
-  text-align: center;
   max-width: 75ch;
+  line-height: 1.8rem;
+  color: var(--clr-dark-purple);
 }
 
 .mms-hero__left {
@@ -713,9 +722,20 @@ footer {
   font-size: var(--fs-logo-base);
 }
 
+.mms-hero__subtitle {
+  font-size: var(--fs-accent);
+  font-family: var(--ff-normal-bold);
+  color: var(--clr-dark-purple);
+}
+
 .mms-hero__img {
   max-width: 100%;
   height: 100%;
+}
+
+.mms-hero__btn {
+  background-color: var(--clr-accent-blue);
+  align-self: start;
 }
 
 /* Subsection - band */
@@ -744,6 +764,69 @@ footer {
   /* height: var(--deco-section-height); */
 }
 
+/* CTA Top */
+
+.cta {
+  border: 1px solid var(--clr-light-grey);
+  background-color: var(--clr-accent-blue);
+  padding: 5rem 0 2rem 0;
+  overflow: hidden;
+}
+
+.cta__wrapper {
+  align-items: center;
+  justify-content: center;
+}
+
+.cta__left {
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.cta__left h3,
+p,
+span {
+  color: var(--clr-dark-purple);
+}
+
+.cta__header {
+  color: var(--clr-accent-pink);
+  gap: 0.5rem;
+  font-family: var(--ff-normal-bold);
+}
+
+.cta__image {
+  rotate: 10deg;
+}
+
+.cta__img-bg {
+  opacity: 0.3;
+}
+
+.cta__right-img {
+  rotate: 150deg;
+  left: -20%;
+  bottom: -15%;
+  height: 100%;
+}
+
+.cta__left-img {
+  rotate: -10deg;
+  right: -11%;
+  top: -5%;
+  height: 100%;
+}
+
+.cta__left-para {
+  max-width: 65ch;
+  line-height: 2.5rem;
+}
+
+.cta__button {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /* Information section */
 .mms-information {
 }
@@ -757,4 +840,13 @@ footer {
 
 .mms-information__heading {
   font-size: var(--fs-heading);
+}
+
+.information__header {
+  line-height: 1.8rem;
+  align-items: center;
+}
+
+.information__left {
+  gap: 0.5rem;
 }
