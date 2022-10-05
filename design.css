@@ -104,6 +104,10 @@ strong {
 
 /* utility */
 
+ion-icon {
+  --ionicon-stroke-width: 32px;
+}
+
 .bg-fixed {
   background-attachment: fixed;
   background-position: center center;
