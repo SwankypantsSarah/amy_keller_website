@@ -11,6 +11,10 @@
     font-size: var(--fs-accent);
   }
 
+  .nav-wrapper ul {
+    gap: 1rem;
+  }
+
   /* Homepage Hero */
   .hero-shape {
     width: 60vw;
@@ -97,5 +101,15 @@
 
   .footer-logo {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 43.75em) {
+  .services-wrapper {
+    margin-inline: 1.6rem;
+  }
+
+  .testimonial-wrapper {
+    padding-inline: 8%;
   }
 }
