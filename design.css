@@ -93,6 +93,10 @@ ul {
   list-style: none;
 }
 
+li {
+  display: inline-block;
+}
+
 p {
   font-family: "parisine-std";
   font-size: var(--fs-body);
@@ -192,7 +196,7 @@ ion-icon {
 }
 
 .section-padding {
-  padding-inline: min(5rem, 7rem);
+  padding-inline: 3rem;
 }
 
 .block-padding {
