@@ -163,7 +163,68 @@
     border: 1px solid rgba(5, 5, 5, 0.2);
   }
 
+  /* footer */
+
   .footer-logo {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 41.875em) {
+  /* utility */
+
+  .block-padding {
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+  }
+
+  /* hero */
+  .hero-shape {
+    width: 100vw;
+    min-height: calc(100% + 15.2rem);
+    clip-path: none;
+    top: 0;
+  }
+
+  /* Services */
+  .services-wrapper {
+    margin-inline: 0.8rem;
+  }
+
+  .service-list {
+    font-size: var(--fs-body);
+  }
+
+  /* Testimonial */
+
+  .testimonial-para:last-child {
+    padding-bottom: 3.6rem;
+  }
+
+  /* Footer */
+
+  .grid-3-col {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 2rem;
+
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
+
+  .footer-left-col {
+    grid-area: a;
+  }
+
+  .footer-mid-col {
+    grid-area: b;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-right-col {
+    grid-area: c;
   }
 }
