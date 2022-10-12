@@ -226,7 +226,7 @@ footer {
   display: flex;
   gap: 2rem;
   position: relative;
-  padding: 2rem 0;
+  padding: 2rem 0.8rem;
 }
 
 .about-subheading {
@@ -319,6 +319,7 @@ footer {
   font-size: var(--fs-body);
   color: var(--clr-accent-pink);
   padding-bottom: 0.2rem;
+  text-align: center;
 }
 
 .about-icon {
@@ -411,7 +412,7 @@ footer {
 .services-header {
   font-size: var(--fs-heading);
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   color: var(--clr-accent-pink);
   font-family: "botanica", "helvetica";
 }
@@ -426,9 +427,10 @@ footer {
   border: 2px solid var(--clr-accent-blue);
   background-color: var(--clr-bg-yellow);
   box-shadow: 0px 1.2rem 1.2rem var(--clr-light-grey);
-  padding: 3.2rem;
-  gap: 1.5rem;
+  padding: clamp(1.6rem, 5vw, 4.8rem);
+  gap: 2rem;
   flex: 1;
+  justify-content: space-between;
   transition: all 0.5s;
 }
 
@@ -446,7 +448,7 @@ footer {
 
 .service-header {
   text-align: center;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.2rem;
 }
 .service-header span {
   color: var(--clr-dark-grey);
@@ -536,7 +538,7 @@ footer {
 .carousel-item {
   height: 600px;
   background-color: var(--clr-bg-accent-yellow);
-  padding: 3rem 6rem;
+  padding: 3rem;
   font-family: inherit;
   display: none;
 }
@@ -565,7 +567,7 @@ footer {
 }
 
 .carousel-button-selected {
-  background-color: black;
+  background-color: var(--clr-accent-pink);
 }
 
 .testimonial-wrapper {
@@ -573,15 +575,20 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1.5rem;
   height: 100%;
-  padding-inline: min(10rem, 15rem);
+  padding-inline: 15%;
   border: 1px solid rgba(5, 5, 5, 0.2);
 }
 
 .testimonial-header {
   color: var(--clr-dark-purple);
   text-transform: uppercase;
+  text-align: center;
+}
+
+.testimonial-para {
+  text-align: left;
 }
 
 /* decor img */
@@ -938,3 +945,5 @@ span {
   font-weight: 700;
   letter-spacing: 5px;
 }
+
+/* Media Queries --- Homepage */
