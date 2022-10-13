@@ -31,7 +31,7 @@ footer {
 /* hero */
 
 .hero {
-  background-image: url(img/colorful_bg_dc.jpg);
+  background-image: url(.img/colorful_bg_dc.jpg);
   /* min-height: 1200px; */
   min-height: clamp(950px, 50vmax, 1200px);
   margin-bottom: 2rem;
@@ -689,7 +689,7 @@ footer {
       var(--clr-bg-accent-yellow) 22%,
       var(--clr-box-shadow-grey)
     ),
-    url("img/AmyKeller112_lrg.jpg");
+    url(".img/AmyKeller112_lrg.jpg");
   background-repeat: no-repeat;
   box-sizing: cover;
   background-position: left center;
