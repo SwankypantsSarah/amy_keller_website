@@ -232,6 +232,10 @@ footer {
   font-weight: var(--fw-bold);
 }
 
+.about-subtitle {
+  text-align: center;
+}
+
 .about-deco {
   position: absolute;
   width: 200px;
@@ -578,7 +582,9 @@ footer {
 }
 
 .testimonial-header {
-  color: var(--clr-dark-purple);
+  font-size: var(--fs-subheading);
+  color: var(--clr-accent-pink);
+  font-weight: var(--fw-bold);
   text-transform: uppercase;
   text-align: center;
 }
