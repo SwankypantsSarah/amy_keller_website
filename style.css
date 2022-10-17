@@ -524,6 +524,7 @@ footer {
 /* BG Pic */
 .amy-pic-wrap-btm {
   background-image: url("./img/AmyKeller111.JPG");
+  background-size: cover;
   min-height: 1000px;
   display: block;
 }
