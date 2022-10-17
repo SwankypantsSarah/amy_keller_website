@@ -524,7 +524,7 @@ footer {
 /* BG Pic */
 .amy-pic-wrap-btm {
   background-image: url("./img/AmyKeller111.JPG");
-  /* min-height: 1000px; */
+  min-height: 1000px;
   display: block;
 }
 
@@ -689,7 +689,7 @@ footer {
   position: relative;
 }
 
-/* .mms-hero::before {
+.mms-hero::before {
   content: "";
   background-image: linear-gradient(
       90deg,
@@ -704,7 +704,7 @@ footer {
   height: 100%;
   width: 100%;
   position: absolute;
-} */
+}
 
 .mms-hero__wrapper {
   justify-content: center;

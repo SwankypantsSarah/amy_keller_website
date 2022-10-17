@@ -119,7 +119,6 @@ ion-icon {
   background-repeat: no-repeat;
   position: relative;
   max-width: 100%;
-  min-height: 100%;
   background-attachment: fixed;
 }
 
