@@ -114,12 +114,13 @@ ion-icon {
 }
 
 .bg-fixed {
-  background-attachment: fixed;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   max-width: 100%;
+  min-height: 100%;
+  background-attachment: fixed;
 }
 
 .btn,

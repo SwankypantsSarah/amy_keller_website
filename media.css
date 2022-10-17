@@ -41,11 +41,6 @@
   .services-wrapper {
     gap: 2.8rem;
   }
-
-  /* BG Pic */
-  .amy-pic-wrap-btm {
-    max-width: 100%;
-  }
 }
 
 @media screen and (max-width: 67.5em) {
