@@ -31,7 +31,7 @@ footer {
 /* hero */
 
 .hero {
-  background-image: url(/img/colorful_bg_dc.jpg);
+  background-image: url(./img/colorful_bg_dc.jpg);
   /* min-height: 1200px; */
   min-height: clamp(950px, 50vmax, 1200px);
   margin-bottom: 2rem;
@@ -207,7 +207,7 @@ footer {
 /* BG Amy Pic */
 
 .amy-pic-wrap {
-  background-image: url(/img/AmyKeller112_lrg.jpg);
+  background-image: url(./img/AmyKeller112_lrg.jpg);
   min-height: 1000px;
   display: block;
 }
@@ -337,7 +337,7 @@ footer {
 /* CTA Mid */
 
 .cta-mid {
-  background-image: url(/img/decor-compressed/tuning_fork_sm.png);
+  background-image: url(./img/decor-compressed/tuning_fork_sm.png);
   background-position: center center;
   background-repeat: no-repeat;
   border-bottom: 1px solid #000;
@@ -523,7 +523,7 @@ footer {
 
 /* BG Pic */
 .amy-pic-wrap-btm {
-  background-image: url(/img/AmyKeller111.jpg);
+  background-image: url(./img/AmyKeller111.jpg);
   min-height: 1000px;
   display: block;
 }
@@ -696,7 +696,7 @@ footer {
       var(--clr-bg-accent-yellow) 22%,
       var(--clr-box-shadow-grey)
     ),
-    url("/img/AmyKeller112_lrg.jpg");
+    url("./img/AmyKeller112_lrg.jpg");
   background-repeat: no-repeat;
   box-sizing: cover;
   background-position: left center;
