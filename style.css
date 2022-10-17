@@ -31,7 +31,7 @@ footer {
 /* hero */
 
 .hero {
-  background-image: url(.img/colorful_bg_dc.jpg);
+  background-image: url(/img/colorful_bg_dc.jpg);
   /* min-height: 1200px; */
   min-height: clamp(950px, 50vmax, 1200px);
   margin-bottom: 2rem;
@@ -207,7 +207,7 @@ footer {
 /* BG Amy Pic */
 
 .amy-pic-wrap {
-  background-image: url(./img/AmyKeller112_lrg.jpg);
+  background-image: url(/img/AmyKeller112_lrg.jpg);
   min-height: 1000px;
   display: block;
 }
@@ -215,16 +215,15 @@ footer {
 /* About Amy */
 
 .about {
-  padding-inline: min(5rem, 7rem);
+  padding-inline: 3.6rem;
 }
 
 .about-row {
   display: flex;
-  justify-content: space-between;
   gap: 2rem;
   position: relative;
   padding: 2rem 0.8rem;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .about-subheading {
@@ -253,7 +252,7 @@ footer {
 }
 
 .about-para {
-  width: clamp(45ch, 50%, 75ch);
+  /* width: clamp(45ch, 50%, 75ch); */
 }
 
 .about-btn,
@@ -266,10 +265,18 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 0.8rem;
 }
 
+.about-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding-bottom: 1.8rem;
+}
 .about-btn {
   background-color: var(--clr-accent-pink);
 }
@@ -330,7 +337,7 @@ footer {
 /* CTA Mid */
 
 .cta-mid {
-  background-image: url(./img/decor-compressed/tuning_fork_sm.png);
+  background-image: url(/img/decor-compressed/tuning_fork_sm.png);
   background-position: center center;
   background-repeat: no-repeat;
   border-bottom: 1px solid #000;
@@ -457,7 +464,7 @@ footer {
 
 .service-heading {
   font-family: "botanica";
-  font-size: var(--fs-subheading);
+  font-size: var(--fs-heading);
   color: var(--clr-accent-pink);
   letter-spacing: 3%;
 }
@@ -516,7 +523,7 @@ footer {
 
 /* BG Pic */
 .amy-pic-wrap-btm {
-  background-image: url(./img/AmyKeller111.jpg);
+  background-image: url(/img/AmyKeller111.jpg);
   min-height: 1000px;
   display: block;
 }
@@ -689,7 +696,7 @@ footer {
       var(--clr-bg-accent-yellow) 22%,
       var(--clr-box-shadow-grey)
     ),
-    url(".img/AmyKeller112_lrg.jpg");
+    url("/img/AmyKeller112_lrg.jpg");
   background-repeat: no-repeat;
   box-sizing: cover;
   background-position: left center;
